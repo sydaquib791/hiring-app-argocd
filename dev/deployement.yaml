@@ -1,0 +1,18 @@
+kind: Deployment
+metadata:
+  name: hiring-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hiring-app
+  template:
+    metadata:
+      labels:
+        app: hiring-app
+    spec:
+      containers:
+        - name: hiring-app
+          image: <dockerhub-user>/hiring-app:1
+          ports:
+            - containerPort: 8080
