@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: hiring-app
-          image: <dockerhub-user>/hiring-app:1
+          image: <dockerhub-user>/hiring-app:3
           ports:
             - containerPort: 8080
